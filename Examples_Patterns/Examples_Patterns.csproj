@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pattern_AbstractFactory\AbstractFactoryFood.cs" />
+    <Compile Include="Pattern_AbstractFactory\Food.cs" />
     <Compile Include="Pattern_Factory\Car.cs" />
     <Compile Include="Pattern_Factory\CarFactory.cs" />
     <Compile Include="Pattern_Singleton\GameApplication.cs" />

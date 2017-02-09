@@ -1,4 +1,5 @@
-﻿using Examples_Patterns.Pattern_Factory;
+﻿using Examples_Patterns.Pattern_AbstractFactory;
+using Examples_Patterns.Pattern_Factory;
 using Examples_Patterns.Pattern_Singleton;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,13 @@ namespace Examples_Patterns
             appl.Name = "Pakimon Go";
             Console.WriteLine(appl);
             //Using the default constructor doesn't work for the GameApplication class! Neither does inheriting from this class work.
+
+            Console.ReadLine();
+            AppleFactory appleFactory = new AppleFactory();
+            Console.WriteLine(appleFactory.GetFood());
+            BananaFactory bananaFactory = new BananaFactory();
+            Console.WriteLine(bananaFactory.GetFood());
+
             Console.ReadLine();
         }
     }
